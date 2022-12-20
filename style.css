@@ -1,0 +1,180 @@
+/* GENERAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Accidentally had my browser zoomed in while developing the site, usually html font-size is set to 62.5% */
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+/* NAVBAR */
+
+nav {
+  z-index: 9;
+  background-color: #111;
+  padding: 1.2rem 0;
+  color: #ddd;
+  position: fixed;
+  width: 100%;
+}
+
+nav .flex {
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  letter-spacing: 0.5px;
+}
+
+.btn-nav:link, .btn-nav:visited {
+  color:#ddd;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+
+.btn-nav:hover, .btn-nav:active {
+  color: gold
+}
+
+/* HEADER */
+
+header {
+  background-color: #111;
+  margin-bottom: 2.4rem;
+}
+
+header .container {
+  height: 80vh;
+  max-width: 52rem;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.5)), url("background.png");
+  background-size: cover;
+}
+
+header div h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#ddd;
+  text-shadow: #111 1px 0 10px;
+  letter-spacing: 1px;
+}
+
+/* ARTICLES */
+
+main .container {
+  max-width: 30rem;
+}
+
+article img {
+  max-width: 6.4rem;
+}
+
+article {
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+article p {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+article h3 {
+  margin-bottom: 0.6rem;
+}
+
+main h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.2rem 0;
+  border-top: #bbb 0.5px solid;
+  border-bottom: #bbb 0.5px solid;
+  background-color: #eee;
+}
+
+.read-more {
+  align-items: center;
+}
+
+.btn-read-more:link, .btn-read-more:visited {
+  display: block;
+  background-color: #e6c200;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 1px;
+  border: 0.5px solid rgba(17, 17, 17, 0.35);
+  transition: all 0.3s;
+
+}
+
+.btn-read-more:hover, .btn-read-more:active {
+  background-color: #ffd700;
+  border: 0.5px solid rgba(17, 17, 17, 0.1);
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #111;
+  color:#eee;
+  padding: 2.4rem 0;
+}
+
+footer img {
+  max-width: 10rem;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
